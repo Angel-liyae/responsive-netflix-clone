@@ -1,0 +1,162 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    position: fixed;
+    top: 160px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+    gap: 35px;
+    font-size: 28px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.yellow {
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -2px;
+    padding: 2px
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+}
+
+.icon {
+    margin-left: 120px;
+    position: absolute;
+    top: 320px;
+}
+
+.imagein {
+    display: flex;
+    gap: 20px;
+}
+
+p {
+    margin-left: 90px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.image {
+    height: 140px;
+    width: 125px;
+    border-radius: 7px;
+}
+
+.space {
+    margin-left: 90px;
+}
+
+.firstBut {
+    background-color: darkred;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+}
+
+.secBut {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+@media(max-width:426px) {
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+
+    .header {
+        height: 50vh;
+        width: 100%;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .icon {
+        margin-left: 20px;
+        position: absolute;
+        top: 190px;
+        font-size: 10px;
+    }
+
+    .space {
+        margin: 0%;
+    }
+
+    p {
+        margin-left: 20px;
+    }
+
+    .yellow {
+        margin-left: 40px;
+    }
+
+    .red {
+        margin-left: 40px;
+    }
+
+    .firstBut {
+        width: 50px;
+        height: 30px;
+    }
+
+    .secBut {
+        width: 90px;
+        height: 30px;
+    }
+
+    .imagein {
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .image {
+        height: 70px;
+        width: 70px;
+    }
+
+    .image:active {
+        transform: scale(1.2);
+        transition: ease-in-out(1.5);
+    }
+
+
+}
